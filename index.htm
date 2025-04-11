@@ -1,0 +1,1120 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="../../../../includes/athena.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app202.us.archive.org';v.server_ms=444;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="../../../../_static/js/bundle-playback.js?v=msCHzjBE" charset="utf-8"></script>
+<script type="text/javascript" src="../../../../_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="../../../../_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://Fxshader.com","20240614223215","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1718404335");
+</script>
+<link rel="stylesheet" type="text/css" href="../../../../_static/css/banner-styles.css?v=p7PEIJWi">
+<link rel="stylesheet" type="text/css" href="../../../../_static/css/iconochive.css?v=3PDvdIFv">
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Fxshader</title>
+    <meta name="description" content="The Fxshader project is a collaborative open-source project created by a team of passionate developers seeking to make Roblox shader experience the best that it can be. Fxshader is developed by the community, for the commmunity.">
+    <meta name="keywords" content="roblox shaders,bloxshade,crunexy,roblox gfx,shaders ">
+    <meta name="author" content="crunexy">
+    <meta property="og:description" content="Enchance Roblox with shaders, play like never before experience games like a movie on amd, nvidia, intel gpus">
+    <meta property="og:title" content="Fxshader | Roblox Shaders">
+    <!-- developed by Fxshader  -->
+    <style>
+        @import url('../../../20240614223215cs_/https/fonts.googleapis.com/css2');
+        html {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            overflow-y: overlay;
+        }
+
+        html::-webkit-scrollbar {
+            background-color: transparent;
+            width: 4px;
+        }
+        html::-webkit-scrollbar-thumb {
+            background-color: white;
+            border-radius: 100px;
+        }
+        html::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        html::-webkit-scrollbar-track-piece {
+            background-color: transparent;
+        }
+        body {
+            background-color: #c0ccd3;
+        }
+
+        body {
+            overflow-x: hidden;
+            max-width: 100vw;
+            cursor: none !important;
+            overflow-y: hidden;
+            margin: 0;
+        }
+
+        html,body {
+            overflow-x: hidden;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 600px;
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: 900;
+            text-align: center;
+            color: white;
+            transform: skewX(336deg);
+            background-image: linear-gradient(45deg, #3718a88a 5%,transparent 5%, transparent, transparent 95%, #3718a88a 95%);
+            padding: 20px;
+        }
+
+        .prism {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            object-fit: fill;
+            width: 550px;
+            height: 550px;
+            margin-left: 70%;
+            filter: blur(60px);
+        }
+
+        .prism::after {
+            content: "";
+            background-color: #0c27f5;
+            background-image: linear-gradient(45deg, #3bc5a6, transparent);
+            width: 550px;
+            height: 550px;
+            transform: rotate(40deg);
+            position: relative;
+            display: block;
+            z-index: -2;
+
+        }
+
+        @media (min-width: 1000px) {
+            .prism {
+                margin-left: 80%;
+            }
+        }
+        @media (min-width: 1400px) {
+            .prism {
+                margin-left: 85%;
+            }
+        }        
+
+        .mouse-effect {
+            border-radius: 100px;
+            height: 32px;
+            width: 16px;
+            border: 1px solid white;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            margin-top: 8px !important;
+        }
+
+        .mouse-effect > .circle {
+            background-color: white;
+            width: 8px;
+            height: 8px;
+            position: relative;
+            display: block;
+            border-radius: 100%;
+            animation: 1s mouse-down infinite forwards linear;
+        }
+
+        @keyframes mouse-down {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(24px);
+                opacity: 0;
+            }
+        }
+
+        .hero-text {
+            color: white;
+            font-weight: 400;
+            margin-top: 20px !important;
+            padding-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .hero > p {
+            margin: 0;
+        }
+
+        .mouse-circle {
+            height: 32px;
+            width: 32px;
+            background-color: rgb(255 255 255 / 77%);
+            position: absolute;
+            display: block;
+            border-radius: 100%;
+            z-index: 25;
+            pointer-events: none;
+            transition: 0.25s background-color, 0.25s transform;
+        }
+
+        @media (min-width: 800px) {
+            body {
+                cursor: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .prism {
+                margin-left: 90%;
+                width: 300px;
+                height: 300px;
+                background-image: none;
+                margin-top: -120px;
+            }
+
+            .prism::after {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        .reasons-number {
+            font-family: "JetBrains Mono", monospace;
+            font-optical-sizing: auto;
+            color: rgba(126, 148, 158, 0.705);
+            font-weight: 900;
+            font-size: 16rem;
+            transform: rotate(90deg);
+            transform-origin: left;
+            margin-left: 300px;
+
+        }
+
+        .reasons-number:hover {
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(45deg, #f1dd1a, #e30b1f);
+        }
+
+        .reason {
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            pointer-events: all;
+            margin-left: -250px;
+            margin-top: 100px;
+        }
+
+        .reason > div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        
+
+        .screen-num-holder {
+            height: calc(100svh - 40px);
+            width: calc(100vw - 40px);
+            pointer-events: none;
+            display: flex;
+            position: fixed;
+            align-items: end;
+            justify-content: center;
+            padding: 20px;
+            z-index: 20;
+        }
+
+        .number-box {
+            width: calc(100% - 40px);
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            pointer-events: all;
+        }
+
+        .number-box > p {
+
+        }
+
+        .call {
+            border: none;
+            border-radius: 100px;
+            width: 82px;
+            height: 32px;
+            color: white;
+            background-color: rgba(231, 24, 86);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            gap: 10px;
+            
+        }
+
+        .call > svg {
+            pointer-events: none;
+        }
+
+        .reason-text {
+            font-weight: 800;
+            font-size: 2rem;
+            color: rgb(24, 145, 232);
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 800px) {
+            .reason-text {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 0;
+            }
+
+            .reasons-number {
+                margin-left: 100px;
+                position: absolute;
+                transform: rotate(90deg) scale(1.5);
+                margin-left: 120px;
+                z-index: -2;
+            }
+
+            .reason > div > p {
+                margin-top: 200px;
+            }
+
+            .reason {
+                width: 100%;
+            }
+
+            .reason > div > img {
+                display: none;
+            }
+        }
+
+        .reasons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #272b2f;
+                background-image: linear-gradient(45deg, #0a122d, #250f4b);
+                background-repeat: no-repeat;
+            }
+
+            .reason-title {
+                color: rgb(39 31 98) !important;
+            }
+
+            .performant-title {
+                background-image: linear-gradient(0deg, #271f62 50%, #ffffff00 51%, transparent 55%, #271f62 55%), linear-gradient(90deg, #250f4b 0%, #250f4b 50%, #271f62 50%) !important;
+                -webkit-text-fill-color: #250f4b;
+                background-color: #271f62 !important;
+
+            }            
+        }
+
+        @media (prefers-color-scheme: light) {
+            .mouse-circle {
+                background-color: rgba(101, 189, 248, 0.77);
+            }
+            body {
+                background-color: white;
+            }
+
+            .reason-title {
+                color: black !important;
+            }
+
+            .title {
+                color: black;
+                background-image: linear-gradient(45deg, #0072ff 5%, transparent 5%, transparent, transparent 95%, #0072ff 95%);
+            }
+
+            .download {
+                box-shadow: 0px 4px 7px #0316614f;
+            }
+
+            .prism {
+                display: none;
+            }
+
+            .hero {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e"), linear-gradient(180deg, #c3e8fda8, transparent);
+                background-repeat: repeat;
+            }
+
+            .hero-text {
+                color: #343e47;
+            }
+
+            .download-area > * {
+                color: #343e47 !important;
+            }
+
+            .custom-shaders-fx {
+                background-color: black !important;
+            }
+        }
+
+        .reason[style*="opacity:"] > * {
+            pointer-events: none;
+        }
+
+        .reason[style*="opacity:"] {
+            pointer-events: all;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+        }
+
+        .decor {
+            z-index: -1;
+            position: absolute;
+        }
+
+        .post {
+            padding: 20px;
+            background-color: rgba(231, 24, 86);
+            height: 250px;
+            width: 400px;
+            margin-top: 100px;
+            margin-left: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .post-actions {
+            display: flex;
+            justify-content: end;
+            padding: 10px;
+            color: white;
+        }
+
+        .post-title {
+            color: white;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+
+        .bottom {
+            padding: 60px;
+        }
+
+        .download {
+            padding: 12px;
+            border: none;
+            padding-left: 32px;
+            padding-right: 32px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            font-size: 0.75rem;
+            color: #686e82;
+            margin-top: 10px;
+        }
+
+        .download-area {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .download-area > p {
+            margin: 0;
+            color: white;
+        }
+
+        .download-area > p > a {
+            text-decoration: underline;
+            color: inherit;
+        }
+
+
+
+        .reason > div > p {
+            margin: 0;
+            color: white;
+        }
+
+        .reason > div:first-child {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .reason-title {
+            font-size: 4rem;
+            font-weight: 900;
+            font-stretch: ultra-expanded;
+            transform: scale(2.5) translateX(10%);
+        }
+        .performant-fx {
+            position: absolute;
+            margin-top: -180px;
+            animation: shoot linear;
+            animation-timeline: scroll();            
+            filter: drop-shadow(0px 0px 20px orange);
+        }
+
+        .performant-title {
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(0deg, black 50%, #ffffff00 51%, transparent 55%, black 55%), linear-gradient(90deg, white 0%, white 50%, black 50%);
+            background-size: 1500px 100%;
+            background-color: black;
+            background-repeat: no-repeat;
+            animation-name: performant-cutthrough;
+            animation-timeline: scroll() !important;
+            
+            position: absolute;
+        }
+        
+
+        @keyframes shoot {
+            from {
+                transform: translateX(-150vw);
+            }
+
+            to {
+                transform: translateX(200vw);
+            }
+        }
+
+        @keyframes performant-cutthrough {
+            from {
+                background-position-x: -4500px;
+            }
+            to {
+                background-position-x: 800px;
+            }
+        }
+
+        .banner {
+            height: 50px;
+            padding: 4px;
+            background-color: #e30b54;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            position: fixed;
+            width: 100vw;
+        }
+
+        .footer-call {
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            background-image: linear-gradient(45deg, #0114a369, #018ba3ad);
+        }
+
+        .footer-call > div {
+            display: flex;
+            align-items: center;
+            color: white;
+            gap: 10px;
+            width: 50%;
+            justify-content: space-between;
+        }
+
+        .footer-call-button {
+            background-color: white;
+            padding: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border: none;
+            border-radius: 5px;
+            color: #24d4cc;
+            transition: 0.25s background-color;
+        }
+
+        .footer-call-button:hover {
+            background-color: rgb(221, 232, 245);
+        }
+
+        .custom-shaders-fx {
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text !important;
+            mask-image: url(https://media.discordapp.net/attachments/1352736547925135473/1360066035591680020/fx-bg.png?ex=67f9c3b3&is=67f87233&hm=68683f69bb7a8fe1246058e75172837c5f6468843177f7dbc4ea4c483391640c&=&format=webp&quality=lossless);
+            mask-repeat: repeat;
+            mask-size: 100px 100px;
+            background-color: #271f62;
+            animation: 1s custom-shaders-fx linear infinite;
+        }
+
+        @keyframes custom-shaders-fx {
+            0% {
+                mask-position: 50px 80px;
+            }
+
+            25% {
+                mask-position: 400px 26px;
+            }
+
+            50% {
+                mask-position: -200px 50px;
+            }
+            
+            75% {
+                mask-position: 900px 900px;
+            }
+            100% {
+                mask-position: 0px 0px;
+            }
+        }
+
+        .footer {
+            height: 300px;
+            background-color: #2b2f33;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer > div:first-child {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .links-v {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .links-v > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-title {
+            font-weight: 900;
+            color: white;
+        }
+
+        .footer-dark {
+            height: 50px;
+            background-color: #151718;
+            display: flex;
+            justify-content: center;
+            color: white;
+            align-items: center;
+        }
+
+        .gallery {
+            padding-bottom: 50px;
+        }
+
+        .gallery > svg {
+            position: absolute;
+            margin-left: -1250px;
+            margin-top: -50px;
+        }
+
+        .inside-gallery {
+            background-color: #08beff;
+            padding: 10px;
+        }
+
+        .centerize {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gridder {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row !important;
+        }
+
+        .gridder > div:nth-child(2) {
+            width: 50%;
+            margin-left: -20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .modal-background.open {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.485);
+            position: fixed;
+            z-index: 40;
+            backdrop-filter: blur(40px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: auto !important;
+            
+        }
+
+        .modal-background.open > .modal {
+            background-color: white;
+            padding: 40px;
+            border-radius: 5px;
+        }
+
+        @media(min-width: 800px) {
+            .modal {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;" toolbar-mode="auto">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&platform=wb&referer=https%3A//web.archive.org/web/20240614223215/http%3A//shaderify.com/" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="../../../../_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="../../../../_static/images/toolbar/wayback-toolbar-logo-100.png, ../../../../_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, ../../../../_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0"></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://Fxshader.com/" onfocus="this.focus();this.select();" style="flex:1;"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20240614223215"><input type="submit" value="Go">
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;">
+                    <a class="t" href="/web/20240614223215*/http://shaderify.com/" title="See a list of every capture for this URL">9 captures</a>
+          <div class="r" title="Timespan for captures of this URL">03 Jun 2024 - 14 Jun 2024</div>
+          </div>
+        <div class="k">
+          <a href="" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="750" height="27" border="0"></canvas>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap">May</td>
+            <td class="c" id="displayMonthEl" title="You are here: 22:32:15 Jun 14, 2024">JUN</td>
+            <td class="f" nowrap="nowrap">Jul</td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20240613193046/https://shaderify.com/" title="19:30:46 Jun 13, 2024"><img src="../../../../_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0"></a></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 22:32:15 Jun 14, 2024">14</td>
+            <td class="f" nowrap="nowrap"><img src="../../../../_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap">2023</td>
+            <td class="c" id="displayYearEl" title="You are here: 22:32:15 Jun 14, 2024">2024</td>
+            <td class="f" nowrap="nowrap">2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#" title="Share via My Web Archive">
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20240614223215/http://web.archive.org/screenshot/http://shaderify.com/" id="wm-screenshot" title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20240614223215/http://shaderify.com/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20240614223215/http://shaderify.com/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="#expand"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(../../../../services/img/save-page-now)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/save-page-now" target="_new"><span class="wm-title">Save Page Now</span></a></div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="../../../../_static/images/loading.gif" alt="loading"></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print"></div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(750,27,25,2,"web","http://Fxshader.com","20240614223215",1996,"https://web-static.archive.org/_static/",["https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi","https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+    <div id="modal-area" class="modal-background">
+
+    </div>
+    <input id="__VIEWSTATE" value="" hidden/="">
+    <input id="__EVENTVALIDATION" value="" hidden/="">
+    <input id="__EVENTARGUMENT" value="" hidden/="">
+    <input id="__LASTFOCUS" value="" hidden/="">
+    <div class="prism"></div>
+    <div class="hero">
+        <p class="title">Fxshader</p>
+        <p class="hero-text">Experience roblox like never before.</p>
+        <div class="download-area">
+            <p>Version 1.0.2 - <a href="https://discord.com/invite/mj4HRnN9aq">Discord</a></p>
+            <button class="download" id="download-button">Out of service for a while.</button>
+        </div>
+        
+        
+        <div class="mouse-effect">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <p class="reason-text">WHY fxshader?</p>
+    <div class="reasons">
+        <div class="reason" style="opacity: 3;">
+            <div>
+                <p class="reason-title">UNPATCHABLE</p>
+            </div>
+        </div>
+        <div class="reason" style="opacity: 3;">
+            <div>
+                <p class="reason-title performant-title">PERFORMANT</p>
+                <video muted="" src="fx1.webm" id="performant-fx" loop="" autoplay="" class="performant-fx"></video>
+            </div>
+        </div>        
+        <div class="reason" style="opacity:  3;">
+            <div>
+                <p class="reason-title custom-shaders-fx">CUSTOM SHADERS</p>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="centerize">
+    <div class="gallery">
+    <svg version="1.1" viewbox="0 0 264 264" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+
+        <g transform="translate(24.957 24.877)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(24.957 96.861)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(24.957 165.57)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(24.957 237.55)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(97.687 24.877)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(97.687 96.861)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(97.687 165.57)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(97.687 237.55)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(166.39 24.877)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(166.39 96.861)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(166.39 165.57)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(166.39 237.55)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(239.12 24.877)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(239.12 96.861)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(239.12 165.57)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        <g transform="translate(239.12 237.55)">
+        <path transform="translate(-24.644 -24.644)" d="m24.644 0c13.604 0 24.644 11.041 24.644 24.644 0 13.604-11.041 24.644-24.644 24.644-13.604 0-24.644-11.041-24.644-24.644 0-13.604 11.041-24.644 24.644-24.644z" fill="#08beff" stroke-linecap="round" stroke-width="0"></path>
+        </g>
+        </svg>
+        <div class="inside-gallery">
+            <img src="qwe.PNG">
+        </div>
+    </div>
+    </div>
+    <div class="footer-call">
+
+        <div>
+
+            <p>Open Source</p>
+            <button class="footer-call-button" onclick="window.location.href = ''">Check Out</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="gridder">
+            <div></div>
+            <div>
+                <div>
+                    <p class="footer-title">FOLLOW US</p>
+                    <div class="links-v">
+                        <a href="https://www.youtube.com/@FxRobloxContact">Youtube</a>
+                        <a href="https://discord.gg/mj4HRnN9aq">Discord</a>
+                        <a href="https://github.com">Github</a>
+                    </div>
+                </div>
+                <div>
+                    <p class="footer-title">LEGAL</p>
+                    <div class="links-v">
+                        <a onclick="openTos()">Terms Of Service</a>
+                        <a>Privacy Policy</a>
+                    </div>
+                </div>     
+                <div>
+                    <p class="footer-title">OUR DEVS</p>
+                    <div class="links-v">
+                        <a href="https://www.youtube.com/@FxRobloxContact">Fxroblox</a>
+                    </div>
+                </div>                                
+            </div>
+            <div></div>
+        </div>        
+        <div class="footer-dark">&copy; 2025 Fxshader, All Rights Reserved </div>
+    </div>
+</body>
+<script>
+
+    // indirme linkleri buraya
+    const cdn = {
+        windows: '',
+        // linuxda sadece studio için olacak shader sistemi
+        linux: '@Program.LinuxUrl',
+        // belki ileride android client hazırlarsak koyalım
+        android: ''
+    }
+
+    const isPhone = window.navigator.userAgent.includes('ndroid') || window.navigator.userAgent.includes('iPhone')
+    const performantFx = document.getElementById('performant-fx')
+    if(!isPhone) {
+        const mouseCursor = document.createElement('div')
+        mouseCursor.className = 'mouse-circle'
+        document.getElementsByTagName('body')[0].prepend(mouseCursor)
+
+        document.addEventListener('mousemove', (e) => {
+            let x = e.clientX + window.scrollX
+            let y = e.clientY + window.scrollY
+
+            const targetElement = e.target
+            const targets = ['A', 'BUTTON']
+            if(targets.includes(targetElement.tagName)) {
+                mouseCursor.style = `margin-top: ${y - 16}px !important; margin-left: ${x - 16}px !important; background-color: rgba(0, 0, 0, 0.85); transform: scale(0.75);`
+            }
+            else {
+                mouseCursor.style = `margin-top: ${y - 16}px !important; margin-left: ${x - 16}px !important;`
+            }
+
+            
+        })
+
+    }
+
+    let x = 0
+    let y = 0
+
+    function createModal(data) {
+        const modalArea = document.getElementById('modal-area')
+        modalArea.addEventListener('click', (event => {
+            if(event.currentTarget == event.target) {
+                modalArea.classList.remove('open')
+                modalArea.innerHTML = ''
+            }
+        }))
+        
+        const modal = document.createElement('div')
+        modal.innerText = data
+        modal.classList.add('modal')
+        modalArea.append(modal)
+
+        modalArea.classList.add('open')
+    }
+
+    function openTos() {
+   const tos = `Fxshader in this agreement will be known as "us", "we", "Fxshader"
+
+1. Liability
+We are not liable for actions of our users, our users acknowledge that they will not use our software for illegal or malicious purposes such as cheating. We are not liable to the extent of law allows. By turkish law we are considered "Yer sağlayıcı"  / Content Place Provider and thus have no obligation to moderate user content, or take action.
+
+2. Trademarks
+Roblox is a trademark of Roblox Corporation and we have no affiliation, Fxshader is also our own brand and please be respectful while using our brand.
+
+3. Termination
+Fxshader reserves right to terminate this agreement at any given time but even in this situation article 1 of this agreement/liability will survive.
+
+4. Governing Law
+This agreement is based on the Turkish Law, if an disagreement occurs settlement will be done in Turkish Courts.
+
+5. Appliciability
+If a portion of this agreement is illegal or deemed invalid all other parts shall remain valid.`
+
+createModal(tos)
+}
+
+    document.addEventListener('mousemove', (e) => {
+        x = e.clientX + window.scrollX
+        y = e.clientY + window.scrollY
+
+    })
+    
+    function generateBanner(data) {
+        const banner = document.createElement('div')
+        banner.className = 'banner'
+        banner.innerText = data
+        document.body.prepend(banner)
+    }
+
+    window.addEventListener('load', () => {
+        const isTurkish = navigator.languages.includes('tr-TR')
+        const downloadButton = document.getElementById('download-button')
+      //  const osText = navigator.userAgent.includes('Windows') == true ? "Windows" : 
+   //     navigator.userAgent.includes("Linux") && !navigator.userAgent.includes('Android') == true ? "Linux" : ""
+
+        if(osText == 'Windows') {
+            downloadButton.addEventListener('click', () => window.location.href = cdn.windows)
+        }
+
+
+        if(osText == 'Linux') {
+            downloadButton.addEventListener('click', () => window.location.href = cdn.linux)
+        }
+
+        downloadButton.innerText += " for " + osText
+
+        if(osText == '') {
+            downloadButton.setAttribute('disabled', 'true')
+            downloadButton.innerText = 'Download'
+        }
+        if(navigator.userAgent.includes('Android')) {
+            generateBanner("Currently Android devices are unsupported")
+        }
+
+        if(navigator.userAgent.includes('iPhone')) {
+            generateBanner('iPhones will never be supported due to closed Apple ecosystem')
+        }
+
+        if(navigator.userAgent.includes('Mac OS X')) {
+            generateBanner("Fxshader on Mac OS is planned, check our Discord for updates")
+        }
+
+        // pov: 25 years in prison :skull:
+        if(isTurkish) {
+        /*document.clear()
+        document.open()
+        document.write(`
+        
+<html>
+<head><title>500 Internal Server Error</title></head>
+<body>
+<center><h1>500 Internal Server Error</h1></center>
+<hr><center>nginx/1.9.14 (unix)</center>
+</body>
+</html>
+
+        `)
+        document.close()*/
+        }
+})
+
+    document.addEventListener('scroll', (e) => {
+        let element = document.elementFromPoint(window.innerWidth / 2, y)
+
+        if(element?.style != null) {
+            const opacity = element.style.cssText?.split('opacity:')?.[1]?.trim()?.replaceAll(';', '')
+            if(opacity?.length > 0) {
+                let opacityNumber = parseFloat(opacity)
+                element.style = `opacity: ${opacityNumber + 0.05};`
+            }
+            
+        }
+    })
+</script>
+</html><!--
+     FILE ARCHIVED ON 22:32:15 Jun 14, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:32:14 Apr 11, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.015
+  exclusion.robots: 0.062
+  exclusion.robots.policy: 0.047
+  esindex: 0.017
+  cdx.remote: 12.561
+  LoadShardBlock: 146.461 (3)
+  PetaboxLoader3.resolve: 311.884 (3)
+  PetaboxLoader3.datanode: 57.79 (4)
+  load_resource: 243.55
+-->

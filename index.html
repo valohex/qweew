@@ -1031,7 +1031,8 @@ createModal(tos)
         document.body.prepend(banner)
     }
 
-    window.addEventListener('load', () => {
+    window.addEventListener('load', () => { const osText = navigator.userAgent.includes('Windows') ? "Windows" : 
+    (navigator.userAgent.includes("Linux") && !navigator.userAgent.includes('Android')) ? "Linux" : "";
         const isTurkish = navigator.languages.includes('tr-TR')
         const downloadButton = document.getElementById('download-button')
       //  const osText = navigator.userAgent.includes('Windows') == true ? "Windows" : 

